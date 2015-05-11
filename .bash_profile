@@ -1,13 +1,12 @@
 ## Shortcuts
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+export PATH="/usr/local/bin:$PATH"
 alias ll='ls -al'
 alias editbash='subl ~/.bash_profile'
+alias campusvine='cd ~/code/campusvine'
+alias nooklyn='cd ~/code/nooklyn'
+alias nooklyn-server='PORT=3000 foreman start'
 alias database='mysql.server start'
-alias campusvine='cd ~/Code/campusvine'
-alias nooklyn='cd ~/Code/nooklyn'
-alias dws='cd ~/Freelance/dws-website'
-source ~/.profile
-export PATH=$PATH:/usr/local/bin:/Users/moizkmalik/.rvm/gems/ruby-2.1.5/
-export PATH="/usr/local/bin:$PATH"
+alias prepare-test-db='rake db:migrate RAILS_ENV=test'
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
